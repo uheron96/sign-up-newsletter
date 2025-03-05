@@ -1,0 +1,66 @@
+span {
+  font-family: "Roboto-Bold";
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--white);
+}
+
+.success-image {
+  width: 4em;
+  height: 4em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 3em;
+  background-color: var(--white);
+  gap: 2em;
+}
+
+.dismiss-button {
+  margin-top: auto;
+  width: 90%;
+  margin-bottom: 3em;
+}
+
+@media screen and (min-width: 60em) {
+  html {
+    background-color: var(--dark-blue);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  body {
+    width: 30%;
+    height: auto;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+  }
+
+  .card {
+    border-radius: 16px;
+    padding: 3em;
+  }
+
+  .dismiss-button {
+    width: 80%;
+    margin-bottom: 1.5em;
+  }
+
+  .success-image {
+    width: 3em;
+    height: 3em;
+  }
+}

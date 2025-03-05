@@ -8,18 +8,20 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
+      href="../assets/images/favicon-32x32.png"
     />
 
-    <link rel="stylesheet" type="text/css" href="./styles.css" />
-    <link rel="stylesheet" type="text/css" href="./web-styles.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/base.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/web-styles.css" />
+    <script defer src="../main.js"></script>
 
     <title>Newsletter sign-up form</title>
   </head>
   <body>
     <div class="card">
       <img
-        src="./assets/images/illustration-sign-up-mobile.svg"
+        src="../assets/images/illustration-sign-up-mobile.svg"
         alt="Top image"
         class="top-image-mobile"
       />
@@ -34,8 +36,14 @@
           <li>And much more!</li>
         </ul>
 
-        <form action="">
-          <label for="email">Email address</label><br />
+        <form id="form">
+          <div class="info-row">
+            <label for="email">Email address</label><br />
+            <label for="invalid" class="invalid-email" id="invalid-email"
+              >Valid email required</label
+            >
+          </div>
+
           <input
             type="email"
             id="email"
@@ -51,14 +59,10 @@
       </div>
 
       <img
-        src="./assets/images/illustration-sign-up-mobile.svg"
+        src="../assets/images/illustration-sign-up-mobile.svg"
         alt="Top image"
         class="side-image-web"
       />
     </div>
-
-    <!--  Thanks for subscribing! A confirmation email has been sent to
-    ash@loremcompany.com. Please open it and click the button inside to confirm
-    your subscription. Dismiss message -->
   </body>
 </html>

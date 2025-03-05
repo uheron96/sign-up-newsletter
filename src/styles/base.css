@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../assets/fonts/Roboto-Bold.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../assets/fonts/Roboto-Regular.ttf") format("woff2");
+}
+
+:root {
+  --dark-blue: hsl(234, 29%, 20%);
+  --blue: hsl(235, 18%, 26%);
+  --grey: hsl(0, 0%, 58%);
+  --white: hsl(0, 0%, 100%);
+  --red: rgb(255, 98, 87);
+  --red-opaque: rgba(255, 98, 87, 30%);
+
+  font-family: "Roboto-Regular";
+}
+
+html,
+body,
+h1,
+h2,
+p,
+button,
+ul,
+li,
+form {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: clamp(1em, 10vw, 3em);
+  font-family: "Roboto-Bold";
+  color: var(--dark-blue);
+}
+
+p,
+ul {
+  font-size: clamp(1em, 5vw, 1.3em);
+  color: var(--blue);
+}
+
+.submit-button,
+button {
+  width: 100%;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  font-size: clamp(1em, 4vw, 1.5em);
+  border: none;
+  border-radius: 8px;
+  height: 8vh;
+  box-sizing: border-box;
+}
+
+.submit-button:hover,
+button:hover {
+  background-image: linear-gradient(to right, var(--red), orange);
+  box-shadow: 0px 10px 20px rgba(255, 98, 87, 50%);
+}
