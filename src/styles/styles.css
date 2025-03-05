@@ -58,6 +58,7 @@ input[type="email"] {
   padding-left: 1em;
   margin-top: 0.5em;
   box-sizing: border-box;
+  font-size: clamp(0.6em, 5vw, 1.3em);
 }
 
 input[type="email"]:focus {
@@ -74,4 +75,8 @@ form:invalid input[type="email"]:not(:focus) {
 .invalid-email {
   display: none;
   color: var(--red);
+}
+
+.submit-button {
+  margin-top: 1em;
 }
