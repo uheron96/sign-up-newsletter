@@ -24,7 +24,7 @@ body {
 }
 
 ul {
-  list-style-image: url("../assets/images/icon-list.svg");
+  list-style-image: url("/src/assets/images/icon-list.svg");
   margin-left: 1em;
 }
 
