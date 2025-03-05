@@ -19,13 +19,13 @@ body {
 .inner {
   display: flex;
   flex-direction: column;
-  padding: 2em;
-  gap: 1.5em;
+  padding: 3em;
+  gap: 2em;
 }
 
 ul {
   list-style-image: url("../assets/images/icon-list.svg");
-  margin-left: 1em;
+  margin-left: 1.5em;
 }
 
 li {
@@ -48,6 +48,7 @@ label {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-top: 1em;
 }
 
 input[type="email"] {

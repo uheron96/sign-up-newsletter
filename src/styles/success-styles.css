@@ -41,7 +41,7 @@ body {
   }
 
   body {
-    width: 30%;
+    width: 40%;
     height: auto;
     background-color: var(--white);
     display: flex;
