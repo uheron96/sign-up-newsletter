@@ -10,5 +10,5 @@ emailInput.addEventListener("invalid", (e) => {
 function submitForm(event) {
   event.preventDefault();
 
-  location.replace("./success-page.html");
+  location.replace("./pages/success-page.html");
 }
